@@ -1,0 +1,20 @@
+<table class="tabla-usuarios">
+    <tr>
+        <th>Avatar</th>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>E-mail</th>
+    </tr>
+    <tr *ngFor="let useer of users | paginate: {itemsPerPage:4, currentPage: page}">
+        <td><img class="avatar" src="{{useer.avatar}}"></td>
+        <td>{{useer.id}}</td>
+        <td>{{useer.first_name}}</td>
+        <td>{{useer.last_name}}</td>
+        <td>{{useer.email}}</td>
+    </tr>
+</table>
+<div class="pagination">
+    <pagination-controls (pageChange)="cambiarPagina($event)" previousLabel="Anterior" nextLabel="Siguiente"></pagination-controls>
+</div>
+<button class="boton" (click)=" logOut() ">Salir</button>

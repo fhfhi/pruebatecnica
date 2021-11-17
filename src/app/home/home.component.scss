@@ -1,0 +1,44 @@
+.avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.tabla-usuarios {
+    border-collapse: collapse;
+    width: 100%;
+    th {
+        background-color: #2199e8;
+        color: #cacaca;
+    }
+    tr:nth-child(even) {
+        background-color: #cacaca;
+    }
+    tr:nth-child(odd) {
+        background-color: whitesmoke;
+    }
+    td {
+        align-items: center;
+        text-align: center;
+        vertical-align: middle;
+    }
+}
+
+.pagination {
+    align-items: center;
+    margin-left: 33%;
+}
+
+.boton {
+    background-color: #2199e8;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 42%;
+}

@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+/*# sourceMappingURL=styles.css.map */
+
+html {
+    background: url(https://image.freepik.com/free-vector/cloud-background_91008-382.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #cacaca;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #2199e8;
+}
