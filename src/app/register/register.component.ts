@@ -27,9 +27,8 @@ export class RegisterComponent implements OnInit {
   register() {
     const user = { email: this.email, password: this.password };
     this.userService.register(user).subscribe((data) => {
-      console.log(data);
       this.userService.setToken(data.token);
     });
-    console.log(this.password, this.confirmPassword, this.email);
+    this.router.navigateByUrl('home');
   }
 }
